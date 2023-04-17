@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+      <link rel="stylesheet" href="style.css" />
+      <title>Flashcards</title>
+   </head>
+   <body>
+      <h1>Flashcards</h1>
+      <div class="add" id="add"><button>+</button></div>
+
+      <div id="dialog" class="dialog">
+         <div class="dialog-content" id="dialog-content">
+            <button id="close-button" class="close-button">&times;</button>
+            <div id="notification" class="notification">
+               Word added successfully
+            </div>
+
+            <h2>Add New Word</h2>
+            <form id="add-form">
+               <label for="new_word">Word:</label>
+               <input type="text" id="new_word" name="word" required />
+               <label for="new_definition">Definition:</label>
+               <input
+                  type="text"
+                  id="new_definition"
+                  name="definition"
+                  required
+               />
+               <label for="new_synonyms">Synonyms:</label>
+               <input type="text" id="new_synonyms" name="synonyms" />
+               <label for="new_antonyms">Antonyms:</label>
+               <input type="text" id="new_antonyms" name="antonyms" />
+               <div class="buttons">
+                  <button id="clear-button" type="button">Clear</button>
+                  <button id="insert-button" type="submit">Insert</button>
+               </div>
+            </form>
+         </div>
+      </div>
+
+      <div id="flashcard">
+         <h2 id="word"></h2>
+         <p class="title">Definition</p>
+         <p id="definition"></p>
+
+         <p class="title">Synonyms</p>
+         <ul id="synonyms"></ul>
+         <p class="title">Antonyms</p>
+         <ul id="antonyms"></ul>
+         <div class="buttons">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+         </div>
+      </div>
+      <div class="footer"></div>
+      <script src="newWords.js"></script>
+      <script src="flashcards.js"></script>
+   </body>
+</html>
