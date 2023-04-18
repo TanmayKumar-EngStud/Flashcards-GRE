@@ -21,6 +21,11 @@ import nltk
 
 nltk.download('wordnet')
 ```
+
+### Running the program
+1. First run the app.py python program, that is your backend server
+2. run the html file
+
 ### Usage
 <img width="963" alt="Screenshot 2023-04-16 at 11 48 57 PM" src="https://user-images.githubusercontent.com/72539289/232647347-68839c2b-21dd-4fd2-909f-d2531ed64ccd.png">
 
