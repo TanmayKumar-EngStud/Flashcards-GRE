@@ -8,7 +8,6 @@
       <title>Flashcards</title>
    </head>
    <body>
-      <h1>Flashcards</h1>
       <div class="add" id="add"><button>+</button></div>
 
       <div id="dialog" class="dialog">
@@ -40,22 +39,30 @@
             </form>
          </div>
       </div>
+      <h1>Flashcards</h1>
+      <div class="wrapper">
+         <div class="content">
+            <ul id="content"></ul>
+         </div>
+         <div class="main">
+            <div id="flashcard">
+               <h2 id="word"></h2>
+               <p class="title">Definition</p>
+               <p id="definition"></p>
 
-      <div id="flashcard">
-         <h2 id="word"></h2>
-         <p class="title">Definition</p>
-         <p id="definition"></p>
-
-         <p class="title">Synonyms</p>
-         <ul id="synonyms"></ul>
-         <p class="title">Antonyms</p>
-         <ul id="antonyms"></ul>
-         <div class="buttons">
-            <button id="prev">Previous</button>
-            <button id="next">Next</button>
+               <p class="title">Synonyms</p>
+               <ul id="synonyms"></ul>
+               <p class="title">Antonyms</p>
+               <ul id="antonyms"></ul>
+               <div class="buttons">
+                  <button id="prev">Previous</button>
+                  <button id="next">Next</button>
+               </div>
+            </div>
+            <div class="footer"></div>
          </div>
       </div>
-      <div class="footer"></div>
+      <script src="content.js"></script>
       <script src="newWords.js"></script>
       <script src="flashcards.js"></script>
    </body>

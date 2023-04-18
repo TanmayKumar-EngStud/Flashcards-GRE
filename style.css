@@ -33,7 +33,7 @@ p.title {
    border-radius: 5px;
    padding: 1em;
    margin: 2em auto;
-   width: 80%;
+   width: 700px;
    max-width: 600px;
 }
 
@@ -167,4 +167,37 @@ label {
 
 .notification.show {
    opacity: 1;
+}
+.wrapper {
+   display: flex;
+}
+.main {
+   margin: auto;
+}
+.content {
+   margin-left: 10px;
+}
+.content ul {
+   margin-top: 100px;
+   width: 350px;
+   height: 500px;
+   overflow-y: scroll;
+   background-color: #00192e;
+   border-radius: 5px;
+}
+
+.content ul li {
+   margin: 2px 0px;
+   border-radius: 0;
+   text-align: center;
+   padding: 15px;
+   display: block;
+
+   transition: 0.5s ease;
+}
+
+.content ul li.active {
+   font-weight: 900;
+   color: rgb(230, 62, 62);
+   background-color: aquamarine;
 }

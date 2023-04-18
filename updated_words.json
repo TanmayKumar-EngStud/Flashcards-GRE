@@ -23512,5 +23512,176 @@
         ]
       }
     }
+  ],
+  "Rapture": [
+    "ecstatic joy or delight, extreme happiness or pleasure",
+    {
+      "Synonyms": {
+        "ecstasy": [
+          [
+            "a state of being carried away by overwhelming emotion; - Charles Dickens",
+            [
+              "listening to sweet music in a perfect rapture"
+            ]
+          ],
+          [
+            "a state of elated bliss",
+            []
+          ],
+          [
+            "street names for methylenedioxymethamphetamine",
+            []
+          ]
+        ],
+        "ebullience": [
+          [
+            "overflowing with eager enjoyment or approval",
+            []
+          ]
+        ],
+        "joy": [
+          [
+            "the emotion of great happiness",
+            []
+          ],
+          [
+            "something or someone that provides a source of happiness",
+            [
+              "a joy to behold",
+              "the pleasure of his company",
+              "the new car is a delight"
+            ]
+          ],
+          [
+            "feel happiness or joy",
+            []
+          ],
+          [
+            "make glad or happy",
+            []
+          ]
+        ],
+        "gaiety": [
+          [
+            "a gay feeling",
+            []
+          ],
+          [
+            "a festive merry feeling",
+            []
+          ]
+        ],
+        "jocular": [
+          [
+            "characterized by jokes and good humor",
+            []
+          ],
+          [
+            "with humor",
+            [
+              "they tried to deal with this painful subject jocularly"
+            ]
+          ]
+        ],
+        "communoin": [],
+        "nirvana": [
+          [
+            "(Hinduism and Buddhism) the beatitude that transcends the cycle of reincarnation; characterized by the extinction of desire and suffering and individual consciousness",
+            []
+          ],
+          [
+            "any place of complete bliss and delight and peace",
+            []
+          ]
+        ]
+      },
+      "Antonyms": {
+        "gloomy": [
+          [
+            "depressingly dark",
+            [
+              "the gloomy forest",
+              "the glooming interior of an old inn",
+              "`gloomful' is archaic"
+            ]
+          ],
+          [
+            "filled with melancholy and despondency",
+            [
+              "gloomy at the thought of what he had to face",
+              "gloomy predictions",
+              "a gloomy silence",
+              "took a grim view of the economy",
+              "the darkening mood",
+              "lonely and blue in a strange city",
+              "depressed by the loss of his job",
+              "a dispirited and resigned expression on her face",
+              "downcast after his defeat",
+              "feeling discouraged and downhearted"
+            ]
+          ],
+          [
+            "causing dejection",
+            [
+              "a blue day",
+              "the dark days of the war",
+              "a week of rainy depressing weather",
+              "a disconsolate winter landscape",
+              "the first dismal dispiriting days of November",
+              "a dark gloomy day",
+              "grim rainy weather"
+            ]
+          ]
+        ],
+        "despondency": [
+          [
+            "feeling downcast and disheartened and hopeless",
+            []
+          ]
+        ],
+        "melancholy": [
+          [
+            "a feeling of thoughtful sadness",
+            []
+          ],
+          [
+            "a constitutional tendency to be gloomy and depressed",
+            []
+          ],
+          [
+            "a humor that was once believed to be secreted by the kidneys or spleen and to cause sadness and melancholy",
+            []
+          ],
+          [
+            "characterized by or causing or expressing sadness",
+            [
+              "growing more melancholy every hour",
+              "her melancholic smile",
+              "we acquainted him with the melancholy truth"
+            ]
+          ],
+          [
+            "grave or even gloomy in character",
+            [
+              "solemn and mournful music",
+              "a suit of somber black",
+              "a somber mood"
+            ]
+          ]
+        ],
+        "bereavement": [
+          [
+            "state of sorrow over the death or departure of a loved one",
+            []
+          ]
+        ],
+        "lugubriousness": [
+          [
+            "the quality of excessive mournfulness and uncheerfulness",
+            []
+          ]
+        ]
+      }
+    }
   ]
 }

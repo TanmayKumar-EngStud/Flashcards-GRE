@@ -7,6 +7,7 @@ fetch("updated_words.json")
    .then((json) => {
       data = json;
       updateFlashcard();
+      add_action();
    })
    .catch((error) => console.error(error));
 
@@ -27,6 +28,15 @@ function updateFlashcard() {
    document.getElementById("definition").textContent = definition;
    document.getElementById("synonyms").innerHTML = synonymList;
    document.getElementById("antonyms").innerHTML = antonymList;
+   const content_li = document.querySelectorAll("#content li");
+
+   for (i of content_li) {
+      if (i.textContent == word) {
+         i.classList.add("active");
+      } else {
+         i.classList.remove("active");
+      }
+   }
    const synonymsList = document.querySelectorAll("#synonyms li");
    synonymsList.forEach((li) => {
       li.addEventListener("click", (event) => {
@@ -94,3 +104,15 @@ document.getElementById("next").addEventListener("click", () => {
    }
    updateFlashcard();
 });
+
+function add_action() {
+   const content_li = document.querySelectorAll("#content li");
+
+   content_li.forEach((li) => {
+      li.addEventListener("click", (event) => {
+         currentIndex = Object.keys(data).indexOf(li.textContent);
+
+         updateFlashcard();
+      });
+   });
+}
