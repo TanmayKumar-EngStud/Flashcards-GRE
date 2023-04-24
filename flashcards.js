@@ -13,6 +13,10 @@ fetch("updated_words.json")
 
 // Update the flashcard with the current word
 function updateFlashcard() {
+   let color = "";
+   if (0 <= currentIndex < 100) {
+      color = "green";
+   }
    const word = Object.keys(data)[currentIndex];
    const definition = data[word][0];
    const synonyms = data[word][1].Synonyms || {};
@@ -23,7 +27,8 @@ function updateFlashcard() {
    const antonymList = Object.keys(antonyms)
       .map((antonym) => `<li>${antonym}</li>`)
       ?.join("");
-
+   const flashcard = document.getElementById("flashcard");
+   flashcard.classList.add(color);
    document.getElementById("word").textContent = word;
    document.getElementById("definition").textContent = definition;
    document.getElementById("synonyms").innerHTML = synonymList;
@@ -82,6 +87,7 @@ function updateFlashcard() {
             count++;
          }
          final_content = `<Strong><h3>${token.toUpperCase()}</h3></Strong><br> ${token_info}`;
+         document.querySelector(".footer").classList.remove("hidden");
          document.querySelector(".footer").innerHTML = final_content;
       });
    });
@@ -116,3 +122,7 @@ function add_action() {
       });
    });
 }
+
+document.getElementbyId("close").addEventListener("click", () => {
+   document.querySelector(".footer").classList.add("hidden");
+});

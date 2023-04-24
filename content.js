@@ -10,7 +10,11 @@ function fill_content(content_data) {
    content = ``;
    count = 1;
    for (i of Object.keys(content_data)) {
-      content += `<li id="content_word ${count++}">${i}</li>`;
+      color = "";
+      if (0 <= count < 100) {
+         color = "green";
+      }
+      content += `<li class= "${color}" id="content_word ${count++}">${i}</li>`;
    }
 
    document.getElementById("content").innerHTML = content;
