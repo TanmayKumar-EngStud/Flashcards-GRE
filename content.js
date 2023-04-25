@@ -8,13 +8,16 @@ fetch("updated_words.json")
    .catch((error) => console.error(error));
 function fill_content(content_data) {
    content = ``;
-   count = 1;
+   count = 0;
    for (i of Object.keys(content_data)) {
       color = "";
-      if (0 <= count < 100) {
+      if (0 <= count && count < 100) {
          color = "green";
+      } else if (100 <= count && count < 200) {
+         color = "purple";
       }
-      content += `<li class= "${color}" id="content_word ${count++}">${i}</li>`;
+
+      content += `<li class= "${color}" id="content_word ${count++}"><div id="number">${count}.</div><div id="keyword">${i}</div></li>`;
    }
 
    document.getElementById("content").innerHTML = content;

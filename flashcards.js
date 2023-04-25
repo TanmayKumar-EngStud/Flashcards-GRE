@@ -14,9 +14,12 @@ fetch("updated_words.json")
 // Update the flashcard with the current word
 function updateFlashcard() {
    let color = "";
-   if (0 <= currentIndex < 100) {
+   if (0 <= currentIndex && currentIndex < 100) {
       color = "green";
+   } else if (100 <= currentIndex && currentIndex < 200) {
+      color = "purple";
    }
+
    const word = Object.keys(data)[currentIndex];
    const definition = data[word][0];
    const synonyms = data[word][1].Synonyms || {};
@@ -28,6 +31,9 @@ function updateFlashcard() {
       .map((antonym) => `<li>${antonym}</li>`)
       ?.join("");
    const flashcard = document.getElementById("flashcard");
+   while (flashcard.classList.length > 0) {
+      flashcard.classList.remove(flashcard.classList.item(0));
+   }
    flashcard.classList.add(color);
    document.getElementById("word").textContent = word;
    document.getElementById("definition").textContent = definition;
@@ -62,8 +68,10 @@ function updateFlashcard() {
             }
             count++;
          }
-         final_content = `<Strong><h3>${token.toUpperCase()}</h3></Strong><br> ${token_info}`;
-         document.querySelector(".footer").innerHTML = final_content;
+         document.querySelector(".footer").classList.remove("hidden");
+         document.querySelector(".footer Strong h3").innerHTML =
+            token.toUpperCase();
+         document.querySelector(".footer .info").innerHTML = token_info;
       });
    });
    const antonymsList = document.querySelectorAll("#antonyms li");
@@ -86,9 +94,10 @@ function updateFlashcard() {
             }
             count++;
          }
-         final_content = `<Strong><h3>${token.toUpperCase()}</h3></Strong><br> ${token_info}`;
          document.querySelector(".footer").classList.remove("hidden");
-         document.querySelector(".footer").innerHTML = final_content;
+         document.querySelector(".footer Strong h3").innerHTML =
+            token.toUpperCase();
+         document.querySelector(".footer .info").innerHTML = token_info;
       });
    });
 }
@@ -116,13 +125,15 @@ function add_action() {
 
    content_li.forEach((li) => {
       li.addEventListener("click", (event) => {
-         currentIndex = Object.keys(data).indexOf(li.textContent);
+         const keyword = li.querySelector("#keyword").textContent;
+         currentIndex = Object.keys(data).indexOf(keyword);
 
          updateFlashcard();
       });
    });
 }
 
-document.getElementbyId("close").addEventListener("click", () => {
+document.getElementById("close").addEventListener("click", () => {
    document.querySelector(".footer").classList.add("hidden");
 });
+document.querySelector(".footer").classList.add("hidden");

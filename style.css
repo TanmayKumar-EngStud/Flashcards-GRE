@@ -190,8 +190,7 @@ label {
    border-radius: 0;
    text-align: center;
    padding: 15px;
-   display: block;
-
+   display: flex;
    transition: 0.5s ease;
 }
 
@@ -201,9 +200,22 @@ label {
    background-color: aquamarine;
 }
 
+.content ul li #keyword {
+   display: flex;
+   width: 100%;
+   font-weight: 400;
+   justify-content: center;
+}
 .green {
    background-color: rgb(102, 206, 106);
 }
+.purple {
+   background-color: rgb(181, 83, 181);
+}
+.yellow {
+   background-color: rgb(204, 204, 75);
+}
+
 .footer.hidden {
    display: none;
 }
