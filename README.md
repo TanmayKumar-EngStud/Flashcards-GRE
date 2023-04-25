@@ -24,7 +24,7 @@ nltk.download('wordnet')
 
 ### Running the program
 1. First run the app.py python program, that is your backend server
-2. run the html file
+2. run the html file, using live server
 
 ### Usage
 <img width="1440" alt="Screenshot 2023-04-25 at 9 35 26 AM" src="https://user-images.githubusercontent.com/72539289/234172151-f2a57ccf-ec88-4e9b-a272-547ccf1a3da6.png">
