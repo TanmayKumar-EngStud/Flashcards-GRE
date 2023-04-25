@@ -27,15 +27,19 @@ nltk.download('wordnet')
 2. run the html file
 
 ### Usage
-<img width="963" alt="Screenshot 2023-04-16 at 11 48 57 PM" src="https://user-images.githubusercontent.com/72539289/232647347-68839c2b-21dd-4fd2-909f-d2531ed64ccd.png">
+<img width="1440" alt="Screenshot 2023-04-25 at 9 35 26 AM" src="https://user-images.githubusercontent.com/72539289/234172151-f2a57ccf-ec88-4e9b-a272-547ccf1a3da6.png">
+
 
 1. In order to insert new word, click on the '+' button in the top right corner <br>
 2. Then enter the word, it's definition it's synonyms and antonyms. <br>
 3. Then click on the insert button <br>
 4. The python program in the backend will automatically find the definitions and examples of all the synonyms and antonyms with the help of nltk corpus (word-net).<br>
-<img width="1440" alt="Screenshot 2023-04-18 at 7 04 20 AM" src="https://user-images.githubusercontent.com/72539289/232649329-3b8e7f1f-ac62-43dd-8ac1-ff439cd35fda.png">
+<img width="1049" alt="Screenshot 2023-04-25 at 9 36 28 AM" src="https://user-images.githubusercontent.com/72539289/234172182-8d8f7ef7-b982-43ca-ac16-f282a44c44e8.png">
 
-<img width="1440" alt="Screenshot 2023-04-18 at 7 05 02 AM" src="https://user-images.githubusercontent.com/72539289/232649344-94cb3dee-a1e9-46ba-8771-668e7829a557.png">
+
+#### It has different colors for every set of cards
+
+<img width="1049" alt="Screenshot 2023-04-25 at 9 36 50 AM" src="https://user-images.githubusercontent.com/72539289/234172268-e1c5bdc6-6352-47d2-b2a6-e157b1a2cc14.png">
 
 
 ### ⚠️ incase of any wrong word insertion, or corruption of the  `updated_words.json` just copy it from `backup_words.json`
